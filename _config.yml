@@ -1,0 +1,91 @@
+# ----
+# Site
+
+title: CloudFx
+description: CloudFx is a non-profit developers community - "for developers of developers".
+url: https://cloudfx.github.io
+disqus_shortname: cloudfx
+theme: jekyll-theme-cloudcannon
+baseurl:
+
+current_youtube: C43MYopI7c0
+
+active_sibling: Home
+main_url: ""
+google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
+permalink: pretty
+timezone: Pacific/Auckland
+collections:
+  case_studies:
+    output: false
+    permalink: /case-studies/:name/
+defaults:
+  - scope:
+      path: ""
+    values:
+      header_class: "short"
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      _options:
+        content:
+          uploads_dir: "images/blog/:title"
+          format: p h2 h3 h4 h5 h6
+          link: true
+          removeformat: true
+          bold: true
+          italic: true
+          image: true
+          numberedlist: true
+          bulletedlist: true
+          code: true
+          styles: "src/css/editor.css"
+        image:
+          upload_dir: "images/blog/:title"
+          
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-data
+
+# ----------
+# SEO plugin
+
+lang: en_NZ
+logo: /siteicon.png
+twitter:
+  username: CloudCannon
+facebook:
+  publisher: https://www.facebook.com/CloudCannon
+social:
+  name: CloudCannon
+  links:
+    - https://twitter.com/CloudCannon
+    - https://www.facebook.com/CloudCannon
+    - https://plus.google.com/+CloudCannon
+    - https://www.youtube.com/c/CloudCannon
+    - https://github.com/CloudCannon
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+
+recaptcha:
+  sitekey: 6Lfng1EUAAAAAIqcLgzGcjRjVHR46BbyqZNgU2Xd
+  
+_options:
+  content:
+    format: p h2 h3 h4 h5 h6
+    link: true
+    removeformat: true
+    bold: true
+    italic: true
+    image: true
+    numberedlist: true
+    bulletedlist: true
+    code: true
+    styles: "css/editor.css"

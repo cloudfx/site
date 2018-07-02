@@ -1,0 +1,16 @@
+<section class="cta">
+    <div class="wrapper">
+        <p class="big-text">Upcoming Webinars</p>
+        <ul>
+            {% assign webinars = site.data.webinars %}
+            {% for webinar in webinars %}
+            <li class="card">
+                <a class="button brand" href="{{ webinar.link }}">
+                    {{ webinar.date }} [{{webinar.time}}] : {{ webinar.title }}
+                </a>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</section>

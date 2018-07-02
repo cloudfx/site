@@ -1,0 +1,16 @@
+---
+layout: info-page
+title: Experts
+permalink: /members/
+---
+
+<h1>Members</h1>
+
+<p>List of community members.</p>
+
+<ul class="experts">
+	{% assign members = site.data.members | sort: 'name' %}
+	{% for member in members %}
+		<li><a href="{{ member.link }}" target="_blank">{{ member.name }}</a> - {{ member.location }}</li>
+	{% endfor %}
+</ul>

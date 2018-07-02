@@ -1,0 +1,39 @@
+---
+layout: page
+title: Contact
+icons: true
+permalink: /contact/
+---
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
+<div class="contact">
+    <div class="wrapper">
+        <div class="contact-content">
+            <h2>Let's talk</h2>
+            <p>Have questions about CloudFx or anything else? Send us a message and we'll get back to you.</p>
+            <p><a href="mailto:{{ site.footer.contact_us.email }}">{{ site.footer.contact_us.email }}</a></p>
+        </div>
+        <form action="/contact-success/" method="post" class="contact-form">
+            <input type="hidden" name="_to" value="{{ site.footer.contact_us.email }}">
+
+            <div class="text-field">
+                <label class="form-icon">
+                    <i class="material-icons">person</i>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                </label>
+
+                <label class="form-icon">
+                    <i class="material-icons">email</i>
+                    <input type="email" name="email" id="email" placeholder="Email Address" required>
+                </label>
+            </div>
+
+            <textarea name="message" id="message" placeholder="Your Message"></textarea>
+
+            <div class="g-recaptcha" data-sitekey="{{ site.recaptcha.sitekey }}"></div>
+
+            <input type="submit" value="Send Message">
+        </form>
+    </div>
+</div>
