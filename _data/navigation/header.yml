@@ -1,0 +1,5 @@
+buttons:
+  - name: View on Github
+    link: https://github.com/cloudfx
+    type: outer_circle
+embed_twitter_follow_tag: <a href="https://twitter.com/cl0udfx?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @cl0udfx</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

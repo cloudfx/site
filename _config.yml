@@ -71,6 +71,16 @@ social:
     - https://www.youtube.com/channel/UCV4TwSmiwW-NlgMGI8zIb6Q
     - https://github.com/CloudFx
 
+footer:
+  contact_us:
+    email: cloudfxcommunity@gmail.com
+  copyright: CloudFx Community
+  social:
+    twitter: cl0udfx
+    facebook: CloudFx-231724584101177
+    google: u/1/103074069812013806852
+    youtube: UCV4TwSmiwW-NlgMGI8zIb6Q
+
 exclude:
   - Gemfile
   - Gemfile.lock
