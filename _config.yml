@@ -3,9 +3,9 @@
 
 title: CloudFx
 description: CloudFx is a non-profit developers community - "for developers of developers".
-url: https://cloudfx.github.io
-disqus_shortname: cloudfx
-theme: jekyll-theme-cloudcannon
+url: https://cloudfx.github.io/
+disqus_shortname: cloudfxcommunity
+theme: jekyll-theme-cloudfx
 baseurl:
 
 current_youtube: C43MYopI7c0
@@ -14,11 +14,10 @@ active_sibling: Home
 main_url: ""
 google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
-timezone: Pacific/Auckland
 collections:
-  case_studies:
-    output: false
-    permalink: /case-studies/:name/
+  webinars:
+    output: true
+    permalink: /webinars/:name/
 defaults:
   - scope:
       path: ""
@@ -54,20 +53,20 @@ plugins:
 # ----------
 # SEO plugin
 
-lang: en_NZ
+lang: en_US
 logo: /siteicon.png
 twitter:
-  username: CloudCannon
+  username: cl0udfx
 facebook:
-  publisher: https://www.facebook.com/CloudCannon
+  publisher: https://www.facebook.com/CloudFx-231724584101177
 social:
-  name: CloudCannon
+  name: CloudFx
   links:
-    - https://twitter.com/CloudCannon
-    - https://www.facebook.com/CloudCannon
-    - https://plus.google.com/+CloudCannon
-    - https://www.youtube.com/c/CloudCannon
-    - https://github.com/CloudCannon
+    - https://twitter.com/cl0udfx
+    - https://www.facebook.com/CloudFx-231724584101177
+    - https://plus.google.com/u/1/103074069812013806852
+    - https://www.youtube.com/channel/UCV4TwSmiwW-NlgMGI8zIb6Q
+    - https://github.com/CloudFx
 
 exclude:
   - Gemfile

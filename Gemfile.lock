@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/cloudfx/jekyll-theme-cloudfx
-  revision: c7f6d8bf0ba4409b61b455cc435f96150f710022
+  revision: 0988cf416d37e2cb410092067d5eb5c1c3a71267
   specs:
-    jekyll-theme-cloudcannon (0.1.0)
+    jekyll-theme-cloudfx (0.1.0)
       jekyll (~> 3.6)
       jekyll-data (~> 1.0)
       jekyll-feed (= 0.9.2)
@@ -67,7 +67,7 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll (= 3.6.0)
-  jekyll-theme-cloudcannon!
+  jekyll-theme-cloudfx!
 
 BUNDLED WITH
    1.16.2

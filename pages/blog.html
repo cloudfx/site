@@ -1,7 +1,7 @@
 ---
 layout: short
-heading: "The latest in CloudCannon &amp; Jekyll"
-subtitle: Stay informed with our latest news and tutorials
+heading: "The voice of CloudFx Developers"
+subtitle: Posts and Articles written by CloudFx Developers
 title: Blog
 permalink: /blog/
 sitemap:
@@ -9,15 +9,7 @@ sitemap:
   priority: 0.8
 ---
 
-<div class="subscribe">
-	<form action="https://cloudcannon.us12.list-manage.com/subscribe/post?u=c2598ec08fca5843b980a7d3f&amp;id=16297bb754" method="post">
-		<label class="form-icon">
-			<i class="material-icons">email</i>
-			<input type="email" name="EMAIL" placeholder="Email Address" required>
-			<input type="submit" class="dark-blue" value="subscribe">
-		</label>
-	</form>
-</div>
+{% include components/subscribe.html %}
 
 <ul class="blog-posts">
 	{% for post in site.posts limit: 10 %}

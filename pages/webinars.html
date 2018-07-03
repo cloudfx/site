@@ -1,24 +1,52 @@
 ---
 layout: short
-heading: Webinars by CloudFx
-subtitle:
+heading: "CloudFx Webinars"
+subtitle: Recorded webinar series
 title: Webinars
 permalink: /webinars/
+sitemap:
+changefreq: daily
+priority: 0.8
 ---
-<div class="period">
-	<div class="toggle-buttons">
-		<a class="button light no-border dark-hover selected monthly" href="#">RECORDED WEBINARS</a>
-	</div>
-</div>
-<section class="faq">
-	<ul class="cards">
 
-		{% include components/webinars/recorded-card.html
-			title="Welscome"
-			description="asd"
-            youtube="asdasd"%}
+{% include components/subscribe.html %}
 
+<ul class="blog-posts">
+    {% for post in site.webinars limit: 10 %}
+    <li class="blog-post card">
+        {% if post.image_featured and post.image %}
+        <div class="feature-image {{ post.image_featured_style }}">
+            <a href="{{ post.url }}">
+                <img src="{{ post.image }}" alt="{{ post.title }}">
+            </a>
+        </div>
+        {% endif %}
+        <div class="post-box">
+            <div class="title">
+                <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                <div class="post-date">{{ post.date | date: "%d %b %Y" }}</div>
+            </div>
 
-	</ul>
-</section>
-<script src="/js/pricing.js"></script>
+            <div class="post-details">
+                {% assign author = site.data.authors[post.author] %}
+                <img src="{{ author.image }}" alt="A stunning photo of {{ author.name }}" width="200" height="200">
+                <span class="name">{{ author.name }}</span>
+                {% for category in post.categories %}
+                <span class="category-separator">&bull;</span> <span class="category">{{ category }}</span>
+                {% endfor %}
+
+            </div>
+
+            <div class="post-summary">
+                {% if post.content contains '<!-- excerpt stop -->' %}
+                {{ post.content | split:'<!-- excerpt stop -->' | first }}
+                {% else %}
+                {{ post.excerpt }}
+                {% endif %}
+            </div>
+
+            <div class="card-actions"><a class="button light no-border no-padding no-hover" href="{{ post.url }}">Read more &rsaquo;</a></div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
