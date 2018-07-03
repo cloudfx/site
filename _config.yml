@@ -18,6 +18,9 @@ collections:
   webinars:
     output: true
     permalink: /webinars/:name/
+  messages:
+    output: false
+    permalink: /messages/:name/
 defaults:
   - scope:
       path: ""
