@@ -3,7 +3,7 @@
 
 title: CloudFx
 description: CloudFx is a non-profit developers community - "for developers of developers".
-url: https://cloudfx.github.io/
+url: https://cloudfx.github.io
 disqus_shortname: cloudfxcommunity
 theme: jekyll-theme-cloudfx
 baseurl:
