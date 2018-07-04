@@ -16,7 +16,7 @@ google_site_verification: GkBrJRSQqF43wQVGLUeUJFTPBldtIXGCw9toqvS2o_o
 permalink: pretty
 collections:
   webinars:
-    output: true
+    output: false
     permalink: /webinars/:title/
   messages:
     output: false

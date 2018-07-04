@@ -1,12 +1,10 @@
 footer_links:
   - name: CloudFx
     links:
-      - name: Mission
-        link: /mission/
-      - name: Webinars
-        link: /webinars/
       - name: Blog
         link: /blog/
+      - name: Mission
+        link: /mission/
   - name: Resources
     links:
       - name: Members
