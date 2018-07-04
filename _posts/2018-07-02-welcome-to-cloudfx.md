@@ -4,7 +4,7 @@ author: developerbhuwan
 category: General
 image:
 image_featured: false
-permalink: /general/2018/07/02/welcome-to-cloudfx.html
+permalink: general/2018/07/02/welcome-to-cloudfx.html
 ---
 Namaste, to eveyone in CloudFx.
 
